@@ -1,7 +1,7 @@
 ## A Two-stage Fine-tuning Strategy for Generalizable Manipulation Skill of Embodied AI
 ## Getting Started ##
 ### Installation ###
-Our repository is based on the repository [https://github.com/haosulab/ManiSkill2-Learn]
+Our repository is based on the repository [Maniskill2-learn](https://github.com/haosulab/ManiSkill2-Learn)
 To get started, enter the parent directory of where you installed [ManiSkill2](https://github.com/haosulab/ManiSkill2) and clone this repo. Assuming the anaconda environment you installed ManiSkill2 is `mani_skill2`, execute the following commands (**note that the ordering is strict**):
 
 ```
