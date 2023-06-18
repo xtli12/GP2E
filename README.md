@@ -65,6 +65,7 @@ python maniskill2_learn/apis/run_rl.py configs/brl/bc/pointnet_soft_body.py --wo
 ```
 ### A Two-stage Fine-tuning Strategy for Generalizable Manipulation Skill of Embodied AI ###
 ![image](https://github.com/xtli12/GXU-LIPE/assets/86363634/de43d184-1a84-4d49-a341-d74c9f58f8e9)
+
 Fig. 1. The trend line of success rate with PickSingleEGAD task (488 de-notes the highest score checkpoint of Line 1)
 
 During the initial stage of fine-tuning, we achieve the high-est score on the test set. However, as the training process con-tinued, we observe a decline in the success rate (see Line 1 in Fig. 1), indicating potential overfitting of the model to the spe-cific task. To address this issue and further explore the poten-tial capacity of the model, we introduce a two-stage fine-tuning strategy. 
