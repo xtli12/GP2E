@@ -71,7 +71,7 @@ Fig. 1. The trend line of success rate with PickSingleEGAD task (488 de-notes th
 During the initial stage of fine-tuning, we achieve the high-est score on the test set. However, as the training process con-tinued, we observe a decline in the success rate (see Line 1 in Fig. 1), indicating potential overfitting of the model to the spe-cific task. To address this issue and further explore the poten-tial capacity of the model, we introduce a two-stage fine-tuning strategy. 
 In the second stage of our approach, we resume the train-ing process from the highest score checkpoint obtained in the initial stage. However, in addition to resuming training, we make two important adjustments: reducing the batch size and the number of samples in each step. This reduction encour-ages the model to pay more attention to smaller volumes of information. However, it is important to note that setting a smaller batch size(297) and fewer samples in each step (17500) can intro-duce more noise into the training process, as it may extract more irrelevant information. Nonetheless, this adjustment helps mitigate the overfitting issue to some extent. 
 
-### Leaderboard of Mainskill2 Challenge ###
+### Leaderboard of [Mainskill2 Challenge](https://sapien.ucsd.edu/challenges/maniskill/#intro) ###
 #### We are the winner of all the three track
 THE LEADERBOARD OF IMITATION/REINFORCEMENT LEARNING (TEST/RIGID BODY)
 
