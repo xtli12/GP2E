@@ -1,4 +1,4 @@
-##A Two-stage Fine-tuning Strategy for Generalizable Manipulation Skill of Embodied AI
+## A Two-stage Fine-tuning Strategy for Generalizable Manipulation Skill of Embodied AI
 ## Getting Started ##
 ### Installation ###
 Our repository is based on the repository [https://github.com/haosulab/ManiSkill2-Learn]
