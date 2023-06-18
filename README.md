@@ -64,7 +64,7 @@ python maniskill2_learn/apis/run_rl.py configs/brl/bc/pointnet_soft_body.py --wo
 "train_cfg.n_checkpoint=10000" "replay_cfg.capacity=10000" "replay_cfg.num_samples=-1" "replay_cfg.cache_size=1000" "train_cfg.n_updates=500"
 ```
 ### A Two-stage Fine-tuning Strategy for Generalizable Manipulation Skill of Embodied AI ###
-![image](https://github.com/xtli12/GXU-LIPE/assets/86363634/de43d184-1a84-4d49-a341-d74c9f58f8e9)
+![twostagefinetuning](https://github.com/xtli12/GXU-LIPE/assets/86363634/3d5b3003-b410-46c1-ae1c-e0880eeeacfb)
 
 Fig. 1. The trend line of success rate with PickSingleEGAD task (488 de-notes the highest score checkpoint of Line 1)
 
@@ -75,6 +75,15 @@ In the second stage of our approach, we resume the train-ing process from the hi
 THE LEADERBOARD OF IMITATION/REINFORCEMENT LEARNING (TEST/RIGID BODY)
 
 ![image](https://github.com/xtli12/GXU-LIPE/assets/86363634/fc935a72-c619-4295-8cf8-57fb1df3273f)
+
+THE LEADERBOARD OF NO RESTRICTION (TEST/RIGID BODY)
+
+![image](https://github.com/xtli12/GXU-LIPE/assets/86363634/3701a568-bdc2-4b8a-b910-8e780b28826e)
+
+THE LEADERBOARD OF NO RESTRICTION (TEST/SOFT BODY)
+
+![image](https://github.com/xtli12/GXU-LIPE/assets/86363634/b7016784-6e5b-42ea-a7c9-14bbb451599a)
+
 
 
 
