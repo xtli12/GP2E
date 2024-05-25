@@ -1,4 +1,4 @@
-## A Two-stage Fine-tuning Strategy for Generalizable Manipulation Skill of Embodied AI
+## Learning the Generalizable Manipulation Skills on Soft-body Tasks via Guided Self-attention Behavior Cloning Policy
 ## Getting Started ##
 ### Installation ###
 Our repository is based on the repository [Maniskill2-learn](https://github.com/haosulab/ManiSkill2-Learn)
@@ -64,7 +64,7 @@ python maniskill2_learn/apis/run_rl.py configs/brl/bc/pointnet_soft_body.py --wo
 "train_cfg.n_checkpoint=10000" "replay_cfg.capacity=10000" "replay_cfg.num_samples=-1" "replay_cfg.cache_size=1000" "train_cfg.n_updates=500"
 ```
 
-Our repository is based on the repository [model](https://drive.google.com/file/d/10_kg4uJSV-PyY4NfDEvopdbC7fOZ9XQU/view?usp=drive_link)
+### Our model files is uploaded on [model](https://drive.google.com/file/d/10_kg4uJSV-PyY4NfDEvopdbC7fOZ9XQU/view?usp=drive_link)
 
 
 
