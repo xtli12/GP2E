@@ -63,27 +63,8 @@ python maniskill2_learn/apis/run_rl.py configs/brl/bc/pointnet_soft_body.py --wo
 "replay_cfg.buffer_filenames=YOUR_PATH/trajectory.none.pd_ee_delta_pose_pointcloud.h5" "env_cfg.obs_frame=ee"
 "train_cfg.n_checkpoint=10000" "replay_cfg.capacity=10000" "replay_cfg.num_samples=-1" "replay_cfg.cache_size=1000" "train_cfg.n_updates=500"
 ```
-### A Two-stage Fine-tuning Strategy for Generalizable Manipulation Skill of Embodied AI ###
-![twostagefinetuning](https://github.com/xtli12/GXU-LIPE/assets/86363634/3d5b3003-b410-46c1-ae1c-e0880eeeacfb)
 
-Fig. 1. The trend line of success rate with PickSingleEGAD task (488 de-notes the highest score checkpoint of Line 1)
-
-During the initial stage of fine-tuning, we achieve the high-est score on the test set. However, as the training process con-tinued, we observe a decline in the success rate (see Line 1 in Fig. 1), indicating potential overfitting of the model to the spe-cific task. To address this issue and further explore the poten-tial capacity of the model, we introduce a two-stage fine-tuning strategy. 
-In the second stage of our approach, we resume the train-ing process from the highest score checkpoint obtained in the initial stage. However, in addition to resuming training, we make two important adjustments: reducing the batch size and the number of samples in each step. This reduction encour-ages the model to pay more attention to smaller volumes of information. However, it is important to note that setting a smaller batch size(297) and fewer samples in each step (17500) can intro-duce more noise into the training process, as it may extract more irrelevant information. Nonetheless, this adjustment helps mitigate the overfitting issue to some extent. 
-
-### Leaderboard of [Mainskill2 Challenge](https://sapien.ucsd.edu/challenges/maniskill/#intro) ###
-#### We are the winner of all the three track
-THE LEADERBOARD OF IMITATION/REINFORCEMENT LEARNING (TEST/RIGID BODY)
-
-![image](https://github.com/xtli12/GXU-LIPE/assets/86363634/fc935a72-c619-4295-8cf8-57fb1df3273f)
-
-THE LEADERBOARD OF NO RESTRICTION (TEST/RIGID BODY)
-
-![image](https://github.com/xtli12/GXU-LIPE/assets/86363634/3701a568-bdc2-4b8a-b910-8e780b28826e)
-
-THE LEADERBOARD OF NO RESTRICTION (TEST/SOFT BODY)
-
-![image](https://github.com/xtli12/GXU-LIPE/assets/86363634/b7016784-6e5b-42ea-a7c9-14bbb451599a)
+Our repository is based on the repository [model](https://drive.google.com/file/d/10_kg4uJSV-PyY4NfDEvopdbC7fOZ9XQU/view?usp=drive_link)
 
 
 
