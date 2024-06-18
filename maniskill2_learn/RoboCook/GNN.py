@@ -125,6 +125,9 @@ class PointNet(ExtendedModule):
                 inactivated_output=False,
             )
         self.C1 = nn.Conv1d(1200, 6, kernel_size=1, stride=1, bias=False)
+"""
+Here, we define the Graph Neural Network (GNN) and iteratively update the parameters within the GNN through backpropagation.
+"""
         self.model = GNNModel(6, 512)
     def forward(self, inputs, object_feature=True, concat_state=None, **kwargs):
         xyz = inputs["xyz"] if isinstance(inputs, dict) else inputs
@@ -158,12 +161,17 @@ class PointNet(ExtendedModule):
 
             feature = self.C1(feature).to('cuda:0')
 
+"""
+The following code demonstrates mapping the samples as nodes and edges within the Graph Neural Network (GNN).
+"""
             graphs = [create_graph(feature[t]) for t in range(bs)]
             # loader = DataLoader(graphs, batch_size=4, shuffle=False)
             # model = GNNModel(6, 6).to('cuda:0')
        
             outputs = []
-
+"""
+The following code demonstrates predicting the next sample state based on the current sample state.
+"""
             for data in graphs:
                 data = data.to('cuda:0')
                 output = self.model(data)
