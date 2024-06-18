@@ -82,7 +82,11 @@ class PointNet(ExtendedModule):
 
     def forward(self, inputs, object_feature=True, concat_state=None, **kwargs):
         xyz = inputs["xyz"] if isinstance(inputs, dict) else inputs
-
+"""
+In each iteration, we incorporate Gaussian noise during the sample collection process.
+Subsequently, in the behavior cloning phase, we perform denoising by minimizing the L2 loss function,
+thereby completing the diffusion policy.
+"""
         noise = np.random.normal(0, 0.05, xyz.shape)
 
         # xyz = xyz.to('cpu') 
